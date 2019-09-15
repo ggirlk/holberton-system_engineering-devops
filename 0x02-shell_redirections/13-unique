@@ -1,2 +1,2 @@
 #!/bin/bash
-cat list | tr '[:space:]' '[\n*]' | grep -v "^\s*$" | sort | uniq -u | sort
+cat list | tr '[:space:]' '[\n*]' | grep -v "^\s*$" | sort | uniq -u
