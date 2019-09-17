@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -alt | head -n 10 | tr ' ' '[\n*]' | sort
+ls -1t | head
