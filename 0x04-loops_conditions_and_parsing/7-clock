@@ -10,7 +10,7 @@ do
 	m=$((m+1))
         if [ $m -eq 1 ]; then
                 if [ $h -eq 11 ]; then
-                        h=0
+                        h=-1
                 fi
         	h=$((h+1))
                 echo "Hour:" $h
