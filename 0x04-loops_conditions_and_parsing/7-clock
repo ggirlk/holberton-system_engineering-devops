@@ -9,6 +9,9 @@ do
 	fi
 	m=$((m+1))
         if [ $m -eq 1 ]; then
+                if [ $h -eq 11 ]; then
+                        break
+                fi
         	h=$((h+1))
                 echo "Hour:" $h
 	fi
