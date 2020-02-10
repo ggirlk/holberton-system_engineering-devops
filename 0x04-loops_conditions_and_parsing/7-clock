@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 h=0
-m=1
-while [ $m -lt 13 ]
-echo "Hour:" $h
-do
+m=0
 while [ $m -lt 60 ]
 do
-	echo $m
+	if [ $m -eq 59 ]; then
+		m=0
+	fi
 	m=$((m+1))
-done
-m=1
-h=$((h+1))
+        if [ $m -eq 1 ]; then
+	        if [ $h -eq 12 ]; then
+        	        break
+        	fi
+                h=$((h+1))
+                echo "Hour:" $h
+	fi
+        echo $m
 done
