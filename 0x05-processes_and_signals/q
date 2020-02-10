@@ -1,0 +1,76 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.5  33648  2956 ?        Ss   Feb09   0:02 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Feb09   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Feb09   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S    Feb09   0:00 [kworker/0:0]
+root         5  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Feb09   0:01 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Feb09   0:01 [rcuos/0]
+root         9  0.0  0.0      0     0 ?        S    Feb09   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Feb09   0:00 [rcuob/0]
+root        11  0.0  0.0      0     0 ?        S    Feb09   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    Feb09   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S<   Feb09   0:00 [khelper]
+root        14  0.0  0.0      0     0 ?        S    Feb09   0:00 [kdevtmpfs]
+root        15  0.0  0.0      0     0 ?        S<   Feb09   0:00 [netns]
+root        16  0.0  0.0      0     0 ?        S<   Feb09   0:00 [writeback]
+root        17  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kintegrityd]
+root        18  0.0  0.0      0     0 ?        S<   Feb09   0:00 [bioset]
+root        19  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kworker/u3:0]
+root        20  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kblockd]
+root        21  0.0  0.0      0     0 ?        S<   Feb09   0:00 [ata_sff]
+root        22  0.0  0.0      0     0 ?        S    Feb09   0:00 [khubd]
+root        23  0.0  0.0      0     0 ?        S<   Feb09   0:00 [md]
+root        24  0.0  0.0      0     0 ?        S<   Feb09   0:00 [devfreq_wq]
+root        25  0.0  0.0      0     0 ?        S    Feb09   0:15 [kworker/0:1]
+root        27  0.0  0.0      0     0 ?        S    Feb09   0:00 [khungtaskd]
+root        28  0.0  0.0      0     0 ?        S    Feb09   0:00 [kswapd0]
+root        29  0.0  0.0      0     0 ?        S<   Feb09   0:00 [vmstat]
+root        30  0.0  0.0      0     0 ?        SN   Feb09   0:00 [ksmd]
+root        31  0.0  0.0      0     0 ?        S    Feb09   0:00 [fsnotify_mark]
+root        32  0.0  0.0      0     0 ?        S    Feb09   0:00 [ecryptfs-kthrea]
+root        33  0.0  0.0      0     0 ?        S<   Feb09   0:00 [crypto]
+root        45  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kthrotld]
+root        46  0.0  0.0      0     0 ?        S    Feb09   0:00 [kworker/u2:1]
+root        65  0.0  0.0      0     0 ?        S<   Feb09   0:00 [deferwq]
+root        66  0.0  0.0      0     0 ?        S<   Feb09   0:00 [charger_manager]
+root       108  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kpsmoused]
+root       109  0.0  0.0      0     0 ?        S    Feb09   0:00 [scsi_eh_0]
+root       110  0.0  0.0      0     0 ?        S    Feb09   0:00 [kworker/u2:2]
+root       174  0.0  0.0      0     0 ?        S<   Feb09   0:00 [kworker/u3:1]
+root       175  0.0  0.0      0     0 ?        S    Feb09   0:00 [jbd2/sda1-8]
+root       176  0.0  0.0      0     0 ?        S<   Feb09   0:00 [ext4-rsv-conver]
+root       432  0.0  0.1  19476   648 ?        S    Feb09   0:00 upstart-udev-bridge --daemon
+root       435  0.0  0.3  49876  1692 ?        Ss   Feb09   0:00 /lib/systemd/systemd-udevd --daemon
+root       463  0.0  0.0      0     0 ?        S<   Feb09   0:00 [iprt]
+root       569  0.0  0.5  10220  2812 ?        Ss   Feb09   0:00 dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0
+root       627  0.0  0.2  23424  1088 ?        Ss   Feb09   0:00 rpcbind
+statd      669  0.0  0.2  21544  1372 ?        Ss   Feb09   0:00 rpc.statd -L
+root       675  0.0  0.1  15392   796 ?        S    Feb09   0:00 upstart-socket-bridge --daemon
+root       761  0.0  0.0      0     0 ?        S<   Feb09   0:00 [rpciod]
+root       778  0.0  0.0      0     0 ?        S<   Feb09   0:00 [nfsiod]
+message+   801  0.0  0.2  39232  1228 ?        Ss   Feb09   0:02 dbus-daemon --system --fork
+root       818  0.0  0.0  25544   428 ?        Ss   Feb09   0:00 rpc.idmapd
+root       845  0.0  0.3  43452  1804 ?        Ss   Feb09   0:00 /lib/systemd/systemd-logind
+syslog     856  0.0  0.2 257904  1368 ?        Ssl  Feb09   0:00 rsyslogd
+root       880  0.0  0.1  15408   632 ?        S    Feb09   0:00 upstart-file-bridge --daemon
+root       949  0.0  0.1  14536   948 tty4     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty4
+root       952  0.0  0.1  14536   952 tty5     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty5
+root       956  0.0  0.1  14536   952 tty2     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty2
+root       957  0.0  0.1  14536   956 tty3     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty3
+root       959  0.0  0.1  14536   952 tty6     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty6
+root       995  0.0  0.6  61380  3032 ?        Ss   Feb09   0:00 /usr/sbin/sshd -D
+root      1000  0.0  0.1   4368   648 ?        Ss   Feb09   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+daemon    1001  0.0  0.0  19140   160 ?        Ss   Feb09   0:00 atd
+root      1002  0.0  0.2  23652  1036 ?        Ss   Feb09   0:00 cron
+root      1027  0.0  0.0      0     0 ?        S    Feb09   0:00 [kauditd]
+root      1075  0.0  0.2 232768  1068 ?        Sl   Feb09   0:10 /usr/sbin/VBoxService
+root      1294  0.0  6.8 182604 34380 ?        Ssl  Feb09   0:01 /usr/bin/ruby /usr/bin/puppet agent
+root      1324  0.0  6.9 112876 34684 ?        Sl   Feb09   0:00 ruby /usr/bin/chef-client -d -P /var/run/chef/client.pid -c /etc/chef/client.rb -i 1800 -s 20 -L /var/log/chef/client.log
+root      1351  0.0  0.1  14536   944 tty1     Ss+  Feb09   0:00 /sbin/getty -8 38400 tty1
+root      1488  0.0  0.8 105152  4212 ?        Ss   Feb09   0:00 sshd: vagrant [priv]
+vagrant   1557  0.0  0.3 105152  1736 ?        S    Feb09   0:14 sshd: vagrant@pts/0 
+vagrant   1558  0.0  0.8  21888  4464 pts/0    Ss   Feb09   0:04 -bash
+vagrant   4878  0.0  0.2  11132  1340 pts/0    S+   04:32   0:00 bash ./1-list_your_processes
+vagrant   4879  0.0  0.2  17168  1304 pts/0    R+   04:32   0:00 ps aux
+vagrant   4880  0.0  0.1   8272   952 pts/0    S+   04:32   0:00 less
