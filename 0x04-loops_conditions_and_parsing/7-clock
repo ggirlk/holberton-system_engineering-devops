@@ -3,7 +3,7 @@
 h=0
 while [ $h -lt 13 ]
 do
-export m=0
+export m=1
 echo "Hour: $h"
 while [ $m -lt 60 ]
 do
