@@ -13,7 +13,7 @@ do
                         h=-1
                 fi
         	h=$((h+1))
-                echo "Hour:" $h
+                echo "Hour: $h"
 	fi
         echo $m
 done
