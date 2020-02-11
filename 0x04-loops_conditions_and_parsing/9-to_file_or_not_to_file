@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # gives information about the holbertonschool file
 x=holbertonschool
-if test -f "$x"; then
+if [[ -f "$x" ]] || [[ -d "$x" ]]; then
 	echo "$x file exists"
 	echo "$x is a regular file"
 	if [ -s $x ]; then
