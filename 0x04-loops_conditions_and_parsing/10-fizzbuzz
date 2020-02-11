@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 # gives information about the holbertonschool file
 x=1
+
 while [ $x -lt 101 ]
 do
-if [[ $x%3 -eq 0 ]] && [[ $x%5 -eq 0 ]]; then
+mod3=$x%3
+mod5=$x%5
+if [[ $mod3 -eq "0" ]] && [[ $mod5 -eq "0" ]]; then
 	echo "FizzBuzz"
-elif [[ $x%5 -eq 0 ]]; then
+elif [[ $mod5 -eq "0" ]]; then
 	echo "Buzz"
-elif [[ $x%3 -eq 0 ]]; then
+elif [[ $mod3 -eq "0" ]]; then
 	echo "Fizz"
 else
 	echo "$x"
