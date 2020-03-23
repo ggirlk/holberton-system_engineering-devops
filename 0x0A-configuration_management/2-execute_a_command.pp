@@ -1,5 +1,5 @@
 # Execute a command
-exec { 'refresh_cache':
+exec { 'killmenow':
   command => 'pkill ./killmenow',
   path    => '/usr/local/bin/:/bin/',
 }
