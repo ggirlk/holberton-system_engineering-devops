@@ -1,7 +1,7 @@
 class createfile {
   file { '/tmp/holberton':
     ensure  => '/tmp/holberton',
-    replace => 'no',
+    replace => 'yes',
     content => 'I love Puppet',
     mode => '0744',
     group => 'www-data',
