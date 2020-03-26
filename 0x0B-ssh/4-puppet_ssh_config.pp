@@ -1,7 +1,7 @@
 # Client configuration file 
 exec { 'ssh1':
-  command => 'echo IdentityFile ~/.ssh/holberton >> /etc/ssh/ssh_config',
-  path    => '/usr/bin/:/bin/',
+  command  => 'echo IdentityFile ~/.ssh/holberton >> /etc/ssh/ssh_config',
+  path     => '/usr/bin/:/bin/',
   provider => shell,
 }
 
