@@ -5,6 +5,6 @@ exec { 'ssh1':
 }
 
 exec { 'ssh2':
-  command  => 'echo PasswordAuthentification no >> /etc/ssh/ssh_config',
+  command  => 'echo PasswordAuthentication no >> /etc/ssh/ssh_config',
   provider => shell,
 }
