@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 # Redirection
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt-get -y install'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt install curl gnupg2 ca-certificates lsb-release'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt update'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt install nginx'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx start'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'new="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=TDMfk76hMSQ permanent;"'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo sed -i "26i\ $new" /etc/nginx/sites-available/default'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx restart'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx reload'
