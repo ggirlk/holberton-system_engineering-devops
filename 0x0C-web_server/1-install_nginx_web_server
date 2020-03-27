@@ -2,8 +2,6 @@
 # Install nginx web server
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt-get -y install'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt install curl gnupg2 ca-certificates lsb-release'
-ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt update'
-ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt install nginx'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo chmod 777 /var/www/html/index.nginx-debian.html'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'echo "Holberton School" | sudo cat > /var/www/html/index.nginx-debian.html'
 curl 104.196.146.115/
