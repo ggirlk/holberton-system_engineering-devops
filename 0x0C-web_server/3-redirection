@@ -5,7 +5,8 @@ ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt-get -y install curl gnu
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt-get -y update'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo apt-get -y install nginx'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx start'
-ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo chmod 777 /etc/nginx/sites-available/default'
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton "sudo ufw allow 'Nginx HTTP'"
+ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo chmod 777 /etc/nginx/sites-enabled/default'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo sed -i "/# Note: You should disable gzip for SSL traffic./a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx restart'
 ssh ubuntu@104.196.146.115 -i ~/.ssh/holberton 'sudo service nginx reload'
