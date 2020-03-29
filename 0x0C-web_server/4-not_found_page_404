@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# custom 404 not found
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo ufw allow 'Nginx HTTP'
+sudo chmod 777 /etc/nginx/sites-enabled/default
+$error="\nerror_page 404 /404/index.html;\nlocation = /404/index.html {\n        root /var/www/html/;\n        internal;\n}"
+sudo sed -i "/server_name _;/a $error;" /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
