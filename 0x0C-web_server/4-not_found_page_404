@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 # custom 404 not found
 sudo apt-get -y update
+sudo apt-get -y install
+sudo apt install curl gnupg2 ca-certificates lsb-release
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
+sudo chmod 777 /var/www/html/index.nginx-debian.html
+echo "Holberton School" | sudo cat > /var/www/html/index.nginx-debian.html
 sudo ufw allow 'Nginx HTTP'
+sudo chmod 777 /etc/nginx/sites-available/default
+sudo sed -i "/# Note: You should disable gzip for SSL traffic./a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
 sudo mkdir /var/www/html/404
 sudo touch /var/www/html/404/index.html
 sudo echo "Ceci n'est pas une page" > /var/www/html/404/index.html
