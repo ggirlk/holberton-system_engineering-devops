@@ -5,6 +5,9 @@ sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
+sudo mkdir /var/www/html/404
+sudo touch /var/www/html/404/index.html
+sudo echo "Ceci n'est pas une page" > /var/www/html/404/index.html
 sudo chmod 777 /etc/nginx/sites-enabled/default
 $error="\nerror_page 404 /404/index.html;\nlocation = /404/index.html {\n        root /var/www/html/;\n        internal;\n}"
 sudo sed -i "/server_name _;/a $error;" /etc/nginx/sites-available/default
