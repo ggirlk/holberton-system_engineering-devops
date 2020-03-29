@@ -30,7 +30,7 @@ exec { 'sudo ufw allow 'Nginx HTTP'':
 exec { 'sudo chmod 777 /etc/nginx/sites-enabled/default':
   provider => 'shell',
 }
-exec { 'sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default':
+exec { 'sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default':
   provider => 'shell',
 }
 exec { 'sudo service nginx restart':
