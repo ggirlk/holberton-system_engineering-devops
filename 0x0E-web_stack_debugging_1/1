@@ -1,0 +1,5 @@
+ln: failed to create symbolic link ‘/etc/nginx/sites-enabled/default’: Permission denied
+ * Restarting nginx nginx
+   ...done.
+ * Reloading nginx configuration nginx
+   ...done.
