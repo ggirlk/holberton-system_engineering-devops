@@ -5,7 +5,6 @@ sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
-sudo apt install -y docker.io
-sudo docker run -p 80:80 -d nginx
+sudo cat /etc/sites-available/default > /etc/nginx/sites-enabled/default
 sudo service nginx restart
 sudo service nginx reload
