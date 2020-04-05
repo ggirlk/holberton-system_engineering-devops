@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Nginx likes port 80
 sudo docker run -p 80:80 -d nginx
-reboot
+nginx -s reload
