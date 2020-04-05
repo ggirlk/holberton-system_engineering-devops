@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Nginx likes port 80
-sudo chmod 777 /etc/nginx/sites-enabled/default
-cat /etc/sites-available/default > /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-enabled/default
+ln -s /etc/sites-available/default  /etc/nginx/sites-enabled/default
 sudo service nginx restart
 sudo service nginx reload
