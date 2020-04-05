@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Nginx likes port 80
 cp -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo /etc/init.d/nginx reload
-sudo /etc/init.d/nginx stop
+sudo /etc/init.d/nginx start
+sudo kill -9 "$(cat /run/nginx.pid)"
