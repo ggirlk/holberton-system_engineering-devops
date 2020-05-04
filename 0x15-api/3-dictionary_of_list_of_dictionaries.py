@@ -7,7 +7,6 @@ import json
 
 if __name__ == '__main__':
     user = requests.get('https://jsonplaceholder.typicode.com/users').json()
-    jdata = {}
     data = {}
     for u in user:
         p = {"userId" : u['id']}
@@ -20,5 +19,6 @@ if __name__ == '__main__':
                  "completed": i["completed"]
             })
         data[u['id']] = jdata
+    #print(json.dumps(data, indent=4))
     with open('todo_all_employees.json', 'a+') as f:
         json.dump(data, f)
