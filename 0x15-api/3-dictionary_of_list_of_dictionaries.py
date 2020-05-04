@@ -20,5 +20,5 @@ if __name__ == '__main__':
             })
         data[u['id']] = jdata
     #print(json.dumps(data, indent=4))
-    with open('todo_all_employees.json', 'a+') as f:
+    with open('todo_all_employees.json', 'w') as f:
         json.dump(data, f)
